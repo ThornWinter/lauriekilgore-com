@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Artist Laurie Kilgore paints murals, landscapes, and shy erotica in the Catskills and Hudson Valley.">
+    <meta name="author" content="Thorn Winter">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Laurie Kilgore Artistry</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body onload="coverChanger()">
+
+    <div id="theCover" class="site-wrapper" style="background-image: url('img/galleries/landscapes/3.png');">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+          </div>
+
+          <div class="inner cover">
+              <a href="carousel/index.html" class="btn btn-lg btn-secondary"><span class="cover-heading">Laurie Kilgore</span><br/>Enter</a>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>&copy; 2016 Laurie Kilgore. All Rights Reserved.</p>
+              <a href="http://hookandshadow.com"><img src="img/HSLogoWhiteType.png" width="100" alt="Hook &amp; Shadow" /></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    function coverChanger() {
+      var slide = Math.floor(Math.random() * 8) + 1;
+      document.getElementById('theCover').style="background-image: url('img/galleries/landscapes/" + slide + ".png');";
+    }
+    </script>
+  </body>
+</html>
